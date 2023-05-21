@@ -3,7 +3,7 @@ const config = require('./config');
 
 (async () => {
   const browser = await puppeteer.launch({ headless: "new" });
-  // const browser = await puppeteer.launch({ headless: false });  // 実際に開く場合
+  // const browser = await puppeteer.launch({ headless: false });  // want to open the page
   const page = await browser.newPage();
   await page.goto(config.url);
 
